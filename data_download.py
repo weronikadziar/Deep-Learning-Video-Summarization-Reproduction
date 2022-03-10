@@ -2,14 +2,13 @@
 import csv
  
 ######### Hi Krzysztof and Daniel, here's what you should do ##########
-# Change the urls path to your local path of the query_videoURLs.csv file
 # Change the titles path to your local path of the:
 # - video_name_train.csv file for TRAINIG data
 # - video_name_test.csv file for TESTING data
 # - video_name_val.csv file for VALIDATION data
 # And that's it! The code will save a text file called set_urls.txt
-urls = open(r"C:\Users\Weronika\Documents\GitHub\DL_Reproducibility_Project\dataset\videos\query_videoURLs.csv","r", encoding="Latin-1")
-titles = open(r"C:\Users\Weronika\Documents\GitHub\DL_Reproducibility_Project\dataset\videos\video_name_train.csv","r", encoding="Latin-1")
+urls = open(r"dataset\videos\query_videoURLs.csv","r", encoding="Latin-1")
+titles = open(r"dataset\videos\video_name_train.csv","r", encoding="Latin-1")
 
 urls_read = csv.reader(urls)
 urls_list = []
