@@ -8,12 +8,16 @@ import csv
 # - video_name_val.csv file for VALIDATION data
 # And that's it! The code will save a text file called set_urls.txt
 urls = open(r"dataset\videos\query_videoURLs.csv","r", encoding="Latin-1")
-titles = open(r"dataset\videos\video_name_train.csv","r", encoding="Latin-1")
+titles = open(r"dataset\videos\video_name_test.csv","r", encoding="Latin-1")
 
 urls_read = csv.reader(urls)
 urls_list = []
 all_titles_list = []
 for row in urls_read:
+    print('*' * 30)
+    print(row[0])
+    print(row[1])
+    print('*' * 30)
     urls_list.append(row[1])
     all_titles_list.append(row[0])
 
